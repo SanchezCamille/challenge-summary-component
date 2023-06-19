@@ -6,7 +6,6 @@
 }
 
 #main__container {
-    border: 2px solid red;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +15,7 @@
 }
 
 #summary__container {
-    width: 50%;
+    width: 40%;
     height: 55%;
     display: flex;
     border-radius: 2rem;
@@ -81,4 +80,63 @@
 h1 {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.summary__results--reaction, .summary__results--memory, .summary__results--verbal, .summary__results--visual {
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.summary__results--reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.summary__results--memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.summary__results--verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.summary__results--visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+#summary__results img {
+    margin: 0 8px;
+}
+
+.summary__results__score {
+    position: absolute;
+    right: 10px;
+    color: hsl(242, 28%, 73%);
+    font-weight: 700;
+}
+
+strong {
+    color: hsl(224, 30%, 27%);
+}
+
+button {
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: hsl(224, 30%, 27%);
+    font-size: 1rem;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+button:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    color: white;
+    transition: 200ms ease-in-out;
 }
